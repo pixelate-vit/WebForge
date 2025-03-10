@@ -2,6 +2,16 @@ html{
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar{
+    background: #101010;
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #888888;
+    border-radius: 4px;
+}
+
 body{
     margin: 0px;
     padding: 0px;
@@ -47,6 +57,7 @@ nav{
 .nav-links li a{
     text-decoration: none;
     color:aliceblue;
+    transition: all 0.5s ease;
 }
 
 .active{
