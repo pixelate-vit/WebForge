@@ -105,9 +105,9 @@ nav{
 }
 
 .btn{
-    height: 50px;
-    width: 120px;
-    background-image: linear-gradient(rgba(57, 255, 20, 1), rgba(57, 255, 20, 0.3) );
+    height: 60px;
+    width: 150px;
+    background-image: linear-gradient(rgba(57, 255, 20), rgb(13, 83, 1) );
     border: 0px;
     border-radius: 6px;
     cursor: pointer;
@@ -115,20 +115,19 @@ nav{
 
 .btn a{
     text-decoration: none;
-    font-size: 16px;
-    color: #101010;
+    font-size: 18px;
+    color: black;
     font-weight: 600;
 }
 
 .tech{
-    /* height: 80vh; */
     padding: 80px;
 }
 
 .tech-header{
     font-size: 50px;
     background-color: #fff;
-    background-image: linear-gradient(rgba(57, 255, 20, 1), rgba(57, 255, 20, 0.2));
+    background-image: linear-gradient(rgba(57, 255, 20, 1), rgb(13, 83, 1));
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
