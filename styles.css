@@ -1,0 +1,240 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Montserrat", sans-serif;
+    background-color: #101010;
+}
+
+nav{
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #101010;
+}
+
+.header{
+    font-size: 30px;
+}
+
+.header a{
+    color:#39FF14;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-links{
+    margin: 10px;
+    display: flex;
+    list-style: none;
+    transition:all 0.3s ease-in-out;
+}
+
+.nav-links li{
+    margin: 0px 10px;
+    padding: 10px;
+    font-size: 18px;
+    height: 20;
+    cursor: pointer;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color:aliceblue;
+}
+
+.active{
+    background-color: rgba(57, 255, 20, 0.3);
+    border-radius: 5px;
+}
+
+.nav-links li:hover{
+    background-color: rgba(57, 255, 20, 0.3);
+    border-radius: 5px;
+}
+
+.nav-menu{
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.nav-menu .bar{
+    height: 2px;
+    width: 35px;
+    background-color: #fff;
+}
+
+.home{
+    color: aliceblue;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.home-header{
+    font-size: 80px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.home-byline{
+    font-size: 25px;
+}
+
+.btn{
+    height: 50px;
+    width: 120px;
+    background-image: linear-gradient(rgba(57, 255, 20, 1), rgba(57, 255, 20, 0.3) );
+    border: 0px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #101010;
+    font-weight: 600;
+}
+
+.tech{
+    /* height: 80vh; */
+    padding: 80px;
+}
+
+.tech-header{
+    font-size: 50px;
+    background-color: #fff;
+    background-image: linear-gradient(rgba(57, 255, 20, 1), rgba(57, 255, 20, 0.2));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-align: center;
+}
+
+.tech-gallery{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 50px 10px;
+    gap: 3rem;
+}
+
+.img-containers{
+    position: relative;
+    color: white;
+    height: 300px;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.img-text{
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: solid white 1px;
+    border-bottom: 0;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px 15px;
+    height: 100px;
+    transition: all 0.5s ease;
+}
+
+.img-text:hover{
+    bottom: 0;
+}
+
+footer{
+    background-color: rgba(57, 255, 20, 0.6);
+    margin: 0 20px;
+    padding: 30px 30px 0    ;
+    border-radius: 10px 10px 0px 0px;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-card{
+    margin: 30px 70px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-club{
+    text-align: left;
+}
+
+.about-club *{
+    margin: 0;
+    line-height: 2rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.about-me{
+    text-align: right;
+}
+
+.about-me *{
+    margin: 0;
+    line-height: 2rem;
+}
+
+.links{
+    margin: 50px 0px 0;
+}
+
+.social-media *{
+    margin-right: 5px;
+}
+
+@media screen and (max-width:960px){
+    .nav-menu{
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        /* width: 0%; */
+        background-color: rgb(16, 16, 16, 0.9);
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+    }
+
+    .show {
+        display: flex;
+    }
+
+    .home{
+        text-align: center;
+        font-size: 70%;
+    }
+    .tech-gallery{
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-containers{
+        margin: 50px 0px;
+    }
+    .contact-card{
+        margin: 10px;
+        font-size: 90%;
+    }
+}

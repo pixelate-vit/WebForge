@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>WebForge</title>
+    <style>
+      body {
+        background-color: #101010;
+        margin: 0px;
+        padding: 0px;
+        font-family: "Montserrat", sans-serif;
+        color: aliceblue;
+      }
+
+      nav {
+        padding: 20px 40px;
+        display: flex;
+        justify-content: start;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        background-color: #101010;
+      }
+
+      .logo a {
+        color: #39ff14;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 30px;
+      }
+
+      .form {
+        background-color: rgba(255, 255, 255, 0.2);
+        margin: 50px auto;
+        border-radius: 8px;
+        max-width: 50%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .header {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 600;
+      }
+
+      .form-body {
+        width: 90%;
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .form-group {
+        margin: 5px;
+        width: 180px;
+        padding: 8px 10px;
+        font-size: 15px;
+        border-radius: 4px;
+      }
+
+      button {
+        width: 120px;
+        height: 40px;
+        border: none;
+        border-radius: 6px;
+        background-image: linear-gradient( rgba(57, 255, 20, 1), rgba(57, 255, 20, 0.3));
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+        transition: all 0.2s ease;
+      }
+
+      button:hover {
+        background-color: rgb(21, 119, 3);
+    }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo"><a href="index.html">WebForge</a></div>
+    </nav>
+    <div>
+      <form class="form" id="form">
+        <div class="header">Fill in your details</div>
+        <div class="form-body">
+          <div>
+            <label for="name">Name</label><br />
+            <input
+              type="text"
+              placeholder="Name"
+              name="name"
+              id="name"
+              class="form-group"
+            />
+          </div>
+          <div>
+            <label for="password">Password</label><br />
+            <input
+              type="password"
+              placeholder="Password"
+              name="password"
+              id="password"
+              class="form-group"
+            />
+          </div>
+          <div class="radios">
+            <input type="radio" name="track" id="web" /> Web Dev
+            <input type="radio" name="track" id="app" /> App Dev
+            <input type="radio" name="track" id="game" /> Game Dev
+          </div>
+          <div>
+            <label for="batch">Select your batch</label><br />
+            <select name="batch" id="batch" class="form-group">
+              <option value=""></option>
+              <option value="2026">2026</option>
+              <option value="2027">2027</option>
+              <option value="2028">2028</option>
+              <option value="2029">2029</option>
+            </select>
+          </div>
+          <div>
+            <input type="checkbox" name="agree" id="agree" />I agree to the
+            terms and conditions
+          </div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <script>
+      document.getElementById("form").addEventListener("submit", (e) => {
+        e.preventDefault();
+        const name = document.getElementById("name").value;
+        console.log(name);
+      });
+    </script>
+  </body>
+</html>
